@@ -16,7 +16,7 @@ public class DemoApplication {
         FileUtility fileUtility = new FileUtility();
         String[] stringArr = fileUtility.toStringArray("data/shakespeare-complete-works.txt","[^A-Za-z']+");
         System.out.println(stringArr.length);
-       
+
 
     }
 
