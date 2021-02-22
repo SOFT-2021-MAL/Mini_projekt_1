@@ -12,6 +12,6 @@ public class Stopwatch implements AutoCloseable{
     }
     @Override
     public void close () {
-        out. printf (" %5.6 f\n", step ());
+        out. printf (" %5.6f\n", step ());
     }
 }
