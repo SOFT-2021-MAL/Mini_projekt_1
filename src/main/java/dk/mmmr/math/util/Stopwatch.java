@@ -1,4 +1,4 @@
-package com.example.demo;
+package dk.mmmr.math.util;
 
 import java.io.PrintStream;
 
