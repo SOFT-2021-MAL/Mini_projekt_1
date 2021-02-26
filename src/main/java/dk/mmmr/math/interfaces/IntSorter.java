@@ -1,10 +1,10 @@
 package dk.mmmr.math.interfaces;
 
-public interface StringSorter {
-    String[] sort(String[] arr);
-    default void printArray(String[] arr)
+public interface IntSorter {
+    void sortInt(int arr[]);
+    default void printArray(int[] arr)
     {
-        String[] toPrint =  arr;
+        int[] toPrint =  arr;
         for (int i = 0; i < toPrint.length; i++)
             System.out.print(arr[i] + " ");
     }
