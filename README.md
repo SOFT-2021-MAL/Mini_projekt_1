@@ -4,15 +4,12 @@ Lavet af  Mathias, Morten Rasmus, Magnus
 
 ## Timers
 
-– Selection Sort
+– Selection Sort -> too long  
+– Insertion Sort -> too long  
+– Heap Sort -> 1241,619300  
+– Merge Sort -> 823,854301
+– Sorting using a Trie -> error with shakespeare array :(
 
-– Insertion Sort
-
-– Heap Sort
-
-– Merge Sort
-
-– Sorting using a Trie
 
 ### Info
 
