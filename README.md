@@ -7,7 +7,7 @@ Lavet af  Mathias, Morten Rasmus, Magnus
 – Selection Sort -> too long  
 – Insertion Sort -> too long  
 – Heap Sort -> 1241,619300  
-– Merge Sort -> 823,854301
+– Merge Sort -> 823,854301  
 – Sorting using a Trie -> error with shakespeare array :(
 
 
