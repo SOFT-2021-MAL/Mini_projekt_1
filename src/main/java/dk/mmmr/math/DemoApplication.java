@@ -49,16 +49,16 @@ public class DemoApplication {
 //               stringResult = mergeStringSort.sort(test);
 //        }
 //        mergeStringSort.printArray(stringResult);
+//
+//        try (Stopwatch sw = new Stopwatch()) {
+//               stringResult = heapSort.sort(test);
+//        }
+//        heapSort.printArray(stringResult);
 
         try (Stopwatch sw = new Stopwatch()) {
-               stringResult = heapSort.sort(test);
+               stringResult = trieSort.sort(test);
         }
-        heapSort.printArray(stringResult);
-
-//        try (Stopwatch sw = new Stopwatch()) {
-//               stringResult = trieSort.sort(test);
-//        }
-//        trieSort.printArray(stringResult);
+        trieSort.printArray(stringResult);
     }
 
 }
