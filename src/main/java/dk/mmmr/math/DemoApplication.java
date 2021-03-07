@@ -2,9 +2,7 @@ package dk.mmmr.math;
 
 import dk.mmmr.math.interfaces.IntSorter;
 import dk.mmmr.math.interfaces.StringSorter;
-import dk.mmmr.math.sorting.InsertionSort;
-import dk.mmmr.math.sorting.MergeSort;
-import dk.mmmr.math.sorting.SelectionSort;
+import dk.mmmr.math.sorting.*;
 import dk.mmmr.math.util.FileUtility;
 import dk.mmmr.math.util.Stopwatch;
 import org.springframework.boot.SpringApplication;
@@ -21,8 +19,11 @@ public class DemoApplication {
         FileUtility fileUtility = new FileUtility();
         StringSorter insertionSort = new InsertionSort();
         StringSorter selectionSort = new SelectionSort();
-        IntSorter mergeIntSort = new MergeSort();
         StringSorter mergeStringSort = new MergeSort();
+        StringSorter heapSort = new HeapSort();
+        StringSorter trieSort = new TrieSort();
+
+        IntSorter mergeIntSort = new MergeSort();
 
         String[] test = {"bums", "kage", "qq", "setting", "abemad", "yikes", "bums", "kage", "qq", "setting", "abemad", "yikes", "bums", "kage", "qq", "setting", "abemad", "yikes"};
         String[] stringArr = fileUtility.toStringArray("data/shakespeare-complete-works.txt", "[^A-Za-z']+");
@@ -31,24 +32,33 @@ public class DemoApplication {
 
         String[] stringResult;
 
-        try (Stopwatch sw = new Stopwatch()) {
-            // stringResult = insertionSort.sort(test);
-        }
-        //insertionSort.printArray(stringResult);
+//       try (Stopwatch sw = new Stopwatch()) {
+//            stringResult = insertionSort.sort(test);
+//        }
+//        insertionSort.printArray(stringResult);
+//
+//        try (Stopwatch sw = new Stopwatch()) {
+//             stringResult = selectionSort.sort(test);
+//        }
+//        selectionSort.printArray(stringResult);
+//        try (Stopwatch sw = new Stopwatch()) {
+//               stringResult = mergeStringSort.sort(test);
+//        }
+//        mergeStringSort.printArray(stringResult);
+//        try (Stopwatch sw = new Stopwatch()) {
+//               stringResult = mergeStringSort.sort(test);
+//        }
+//        mergeStringSort.printArray(stringResult);
 
         try (Stopwatch sw = new Stopwatch()) {
-            // stringResult = selectionSort.sort(test);
+               stringResult = heapSort.sort(test);
         }
-        //selectionSort.printArray(stringResult);
+        heapSort.printArray(stringResult);
 
-        try (Stopwatch sw = new Stopwatch()) {
-            //    mergeIntSort.sortInt(intArr);
-        }
-        // mergeIntSort.printArray(intArr);
-        try (Stopwatch sw = new Stopwatch()) {
-            stringResult = mergeStringSort.sort(test);
-        }
-        mergeStringSort.printArray(stringResult);
+//        try (Stopwatch sw = new Stopwatch()) {
+//               stringResult = trieSort.sort(test);
+//        }
+//        trieSort.printArray(stringResult);
     }
 
 }
