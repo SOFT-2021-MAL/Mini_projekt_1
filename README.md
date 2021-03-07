@@ -5,9 +5,13 @@ Lavet af  Mathias, Morten Rasmus, Magnus
 ## Timers
 
 – Selection Sort
+
 – Insertion Sort
+
 – Heap Sort
+
 – Merge Sort
+
 – Sorting using a Trie
 
 ### Info
