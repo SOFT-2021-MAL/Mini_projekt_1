@@ -13,4 +13,4 @@ Lavet af  Mathias, Morten Rasmus, Magnus
 
 ### Info
 
-Trie sorten har vi mere eller mindre copiert for nettet, og har brugt tiden på at læst op på den.
+Trie sorten er mere eller mindre kopieret fra nettet :)
