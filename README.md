@@ -8,7 +8,7 @@ Lavet af  Mathias, Morten Rasmus, Magnus
 – Insertion Sort -> too long  
 – Heap Sort -> 1241,619300  
 – Merge Sort -> 823,854301  
-– Sorting using a Trie -> error with shakespeare array :(
+– Sorting using a Trie -> error with shakespeare array :(  --> works with smaller arrays?
 
 
 ### Info
